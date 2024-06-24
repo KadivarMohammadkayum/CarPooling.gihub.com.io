@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Pooling Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Page Header -->
+     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- Company logo -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler bg-warning py-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Findride.html"><i class="bi bi-search"></i>Find a Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oferride.html"><i class="bi bi-car-front"></i>Offer a Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html"><i class="bi bi-buildings-fill"></i>About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-warning px-5 py-3 rounded-pill fs-5 data"
+                        data-bs-toggle="modal" data-bs-target="#Modal">
+                        Register
+                    </button>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="signIN_Container form_Container">
+                            <form action="index.html" id="frm" name="frm" onsubmit="return validation(this.value)">
+                                <h3>Registration Form :</h3>
+                                <table>
+                                    <tr>
+                                        <td><label for="">First Name :</label></td>
+                                        <td><input type="text" name="fname" id="fname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Last Name :</label></td>
+                                        <td><input type="text" name="lname" id="lname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Gender :</label></td>
+                                        <td>
+                                            <input type="radio" name="gender" id="male">Male
+                                            <input type="radio" name="gender" id="female">Female
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Email Id :</label></td>
+                                        <td><input type="text" name="email" id="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Mobile:</label></td>
+                                        <td><input type="text" name="mobile" id="mobile"></td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td >
+                                            <input type="submit" name="send" value="Send" class="btn" >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1>Login</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <p>Don't have an account? <a href="#">Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</html>

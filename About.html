@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About js</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- External css link -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/Main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+
+<body>
+     <!-- Page Header -->
+     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- Company logo -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler bg-warning py-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Findride.html"><i class="bi bi-search"></i>Find a Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oferride.html"><i class="bi bi-car-front"></i>Offer a Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html"><i class="bi bi-buildings-fill"></i>About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-warning px-5 py-3 rounded-pill fs-5 data"
+                        data-bs-toggle="modal" data-bs-target="#Modal">
+                        Register
+                    </button>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="signIN_Container form_Container">
+                            <form action="index.html" id="frm" name="frm" onsubmit="return validation(this.value)">
+                                <h3>Registration Form :</h3>
+                                <table>
+                                    <tr>
+                                        <td><label for="">First Name :</label></td>
+                                        <td><input type="text" name="fname" id="fname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Last Name :</label></td>
+                                        <td><input type="text" name="lname" id="lname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Gender :</label></td>
+                                        <td>
+                                            <input type="radio" name="gender" id="male">Male
+                                            <input type="radio" name="gender" id="female">Female
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Email Id :</label></td>
+                                        <td><input type="text" name="email" id="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="">Mobile:</label></td>
+                                        <td><input type="text" name="mobile" id="mobile"></td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td >
+                                            <input type="submit" name="send" value="Send" class="btn" >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Banner section -->
+    <section class="about">
+        <div class="contact-us">
+            <div class="container1 text-white text-center mt-5 pt-5">
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <h1>About <b class="text-warning">Us</b></h1>
+                        <button class="bg-transparent border-0 text-white fs-5 mb-5">
+                            <a href="index.html" class="text-white text-decoration-none">Home </a> | About
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About get rider -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About GetRider</h2>
+                    <hr class="line">
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-car-side"></i></div>
+                        <div class="content">
+                            <h3>Millions Of Journeys</h3>
+                            <p>Incididunt ut labore et dolore magna aliqua laboris nisialiquip ex lorem ipsum dolor
+                                eiusmod tempor incididunt sed ipsum loea ...</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <div class="content">
+                            <h3>Largest Car Rider Service</h3>
+                            <p>Incididunt ut labore et dolore magna aliqua laboris nisialiquip ex lorem ipsum dolor
+                                eiusmod tempor incididunt sed ipsum loea ...</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="content">
+                            <h3>Simple & Smart Riding</h3>
+                            <p>Incididunt ut labore et dolore magna aliqua laboris nisialiquip ex lorem ipsum dolor
+                                eiusmod tempor incididunt sed ipsum loea ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/img-car.png" alt="GetRider Car" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <div class="counter text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-md-4">
+                    <div class="stat-card">
+                        <i class="fas fa-car icon"></i>
+                        <h2>750,000</h2>
+                        <p>Vehicles</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-city icon"></i>
+                        <h2>220+</h2>
+                        <p>Cities</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-handshake icon"></i>
+                        <h2>550,000</h2>
+                        <p>Entrepreneurs Partners</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <i class="fas fa-users icon"></i>
+                        <h2>7,500,000</h2>
+                        <p>Passengers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Our Team -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title fw-bold fs-1 mb-5">The Team Behind CarrGo</h2>
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Team-1.jpg" alt="Team-1">
+                        <div class="card-body team_member">
+                            <h2 class="card-title">John Deo</h2>
+                            <h5>Co-Founder and CEO</h5>
+                            <p class="card-text">Duis leo ipsum, consequat sollicitudin enim id, accumsan condimentum
+                                felis. Donec nisl dolor, malesuada tincidunt ultricies et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/team-2.jpeg" alt="Team-1">
+                        <div class="card-body team_member">
+                            <h2 class="card-title">Pat</h2>
+                            <h5>HR</h5>
+                            <p class="card-text">Duis leo ipsum, consequat sollicitudin enim id, accumsan condimentum
+                                felis. Donec nisl dolor, malesuada tincidunt ultricies et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/team-3.jpeg" alt="Team-1">
+                        <div class="card-body team_member">
+                            <h2 class="card-title">Herry</h2>
+                            <h5>Tester</h5>
+                            <p class="card-text">Duis leo ipsum, consequat sollicitudin enim id, accumsan condimentum
+                                felis. Donec nisl dolor, malesuada tincidunt ultricies et.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/logo-white.png" alt="Logo" class="m-auto text-center footer_logo">
+
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p>Sher Your car imperdiet sapien porttitor. The bibendum ullamcorper.</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="bi bi-twitter-x"></i></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ps-lg-5 quick_links">
+                                <h4 class="mb-3">Quick Links</h4>
+                                <ul >
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="Findride.html">Find a Ride</a></li>
+                                    <li><a href="oferride.html">Offer a Ride</a></li>
+                                    <li><a href="Contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 mx-auto ">
+                                <h5 class="text-uppercase mb-4 font-weight-bold ">Subscribe</h5>
+                                <p>Want to be notified about our services? Just sign up and we'll send you a
+                                    notification by email.</p>
+                                <form>
+                                    <div class="input-group rounded-1">
+                                        <input type="email" class="w-75 border-0  ps-3"
+                                            placeholder="Email Address">
+                                            <button class="btn btn-warning rounded-0" type="button" id="button-addon2"><i
+                                                class="bi bi-arrow-right"></i></button>
+                                       
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fw-lg-bold mt-4 all_rights">&copy; 2024 ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
